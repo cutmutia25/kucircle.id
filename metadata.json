@@ -1,0 +1,6 @@
+{
+  "name": "kucircle.id — Homemade Cookies Makassar",
+  "description": "Website toko online resmi kucircle.id, brand homemade cookies dari Makassar. Pilih ukuran 250g hingga 1.000g dan pesan langsung melalui WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

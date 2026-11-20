@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-cream: #FFFBF4;
+  --color-cream-soft: #F7EFE2;
+  --color-cream-border: #E8DACA;
+  --color-cocoa: #2E1A12;
+  --color-cocoa-mid: #5C3A28;
+  --color-cocoa-muted: #7B5B4A;
+  --color-honey: #F2B705;
+  --color-honey-warm: #E5A00D;
+  --color-caramel: #C85A17;
+  --color-whatsapp: #1F8A4C;
+  --color-whatsapp-hover: #18723E;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-cocoa);
+    scroll-padding-top: 5rem;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
